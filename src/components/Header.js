@@ -8,6 +8,11 @@ const Header = (props) => (
                 <i className="fa fa fa-clock-o fa-4x text-white"></i>
                 <div className="h1 ml-3 my-auto text-light" href="/">{props.title}</div>
             </div>
+            <div className="row m-auto">
+                <div className="h1 ml-3 my-auto text-light">
+                    <a>v1.1</a>
+                 </div>
+            </div>
         </div>
     </nav>
 );
