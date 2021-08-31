@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "demo-fd52"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "demo-fd52"
+  template:
+    metadata:
+      labels:
+        app: "demo-fd52"
+    spec:
+      containers:
+        - name: "demo-fd52"
+          image: "contregistrygithub.azurecr.io/demo"
+          ports:
+          - containerPort: 8080
